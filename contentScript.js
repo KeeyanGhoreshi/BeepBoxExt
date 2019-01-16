@@ -475,13 +475,13 @@ function createHeader(insert) {
             deleteThis(event, totalBars, neededBars);
         })
 
-        if(divbool && document.getElementById(i)!=null){
-                div.replaceChild(a,document.getElementById(i));
-                // divDelete.replaceChild(deleteButton,document.getElementById(i+neededBars+17));
-        }else if(insert){
-                div.appendChild(a);
-                // divDelete.appendChild(deleteButton);
-        }
+    if(divbool && document.getElementById(i)!=null){
+            div.replaceChild(a,document.getElementById(i));
+            // divDelete.replaceChild(deleteButton,document.getElementById(i+neededBars+17));
+    }else if(insert){
+            div.appendChild(a);
+            // divDelete.appendChild(deleteButton);
+    }
 
     if(divbool && document.getElementById(i+neededBars+17)!=null && totalBars > 15){
             divDelete.replaceChild(deleteButton,document.getElementById(i+neededBars+17));
