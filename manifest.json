@@ -4,17 +4,19 @@
     "description": "Build an Extension!",
     "homepage_url": "https://beepbox.co/*",
 
-    "background": {
-        "scripts": [
-          "background.js"
-        ],
-        "persistent": true
-      },
       "browser_action": {
         "default_title": "Inject!"
       },
+      "content_scripts": [
+        {
+          "matches": ["https://beepbox.co/*","https://www.beepbox.co/*"],
+          "css": ["contentScript.css"],
+          "js": ["contentScript.js"]
+        }
+      ],
       "permissions": [
         "https://*/*",
+        "*://*/*",
         "http://*/*",
         "file:///*/*",
         "tabs"

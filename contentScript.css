@@ -1,0 +1,104 @@
+.insertion-header{
+    width:496px;
+    position:relative;
+    /* padding-left:16px !important; */
+    background-color:black;
+}
+
+.deletion-header{
+    width:508px;
+    position:relative;
+    /* padding-left:16px !important; */
+    background-color:black;
+}
+
+.first-button{
+    display:inline-block;
+    
+    width: 12px;
+    border-right: 2px solid black;
+    border-left: 0px solid black;
+    height: 5px;
+    background-color: #555555;
+}
+.add-column{
+    display:inline-block;
+    
+    width: 24px;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+    height: 5px;
+    background-color: #555555;
+}
+.arrow-down {
+    position:relative;
+    width: 0; 
+    height: 0; 
+    margin:3px auto 0 auto !important;
+    z-index:2;
+
+    pointer-events: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    
+    border-top: 6px solid #555555;
+  }
+
+  .delete-button {
+    border-right: 6px solid black;
+    border-left: 6px solid black;
+    display:inline-block;
+      width:20px;
+      height:5px;
+      background-color: #885555;
+  }
+
+  .last-delete-button{
+    border-left: 6px solid black;
+    
+    display:inline-block;
+      width:20px;
+      height:5px;
+      background-color: #885555;
+  }
+
+  .add-column:hover{
+      background-color:white;
+
+  }
+
+  .add-column:hover .arrow-down{
+    border-top: 6px solid white;
+  }
+  .first-button:hover{
+
+    background-color: white;
+}
+
+.delete-button:hover {
+      background-color: red;
+  }
+.last-delete-button:hover{
+      background-color: red;
+  }
+
+  .insert-button-editor{
+    display:inline-block;
+      width:40px;
+      margin:5px;
+      height:15px;
+      background-color: white;
+  }
+  .delete-button-editor{
+    display:inline-block;
+
+    margin:5px;
+    width:40px;
+    height:15px;
+    background-color: red;
+}
+
+.button-holder{
+    margin-top:10px !important;
+    padding-left: 15px !important;
+}
